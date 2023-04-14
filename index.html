@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 ForM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <form class="container">
+        <div class="card col">
+            <div class="card-header">
+                <h1>Payment form example</h1>
+            </div>
+            <div class="box">
+                <div class="alert alert-danger fw-semibold" role="[paste_role_here]">
+                    Some fields are missing
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label fw-semibold">Card #</label>
+                        <input type="number" class="form-control fw-semibold" placeholder="XXXXXXXXXXXXXXXX" id="cardNumber">
+                    </div>
+                    <div class="col">
+                        <label class="form-label fw-semibold">CVC #</label>
+                        <input type="number" class="form-control fw-semibold" id="cvc" placeholder="0000" required>
+                    </div>
+                    <div class="col">
+                        <label class="form-label fw-semibold">Amount</label>
+                        <div class="d-flex">
+                            <bold>$</bold>
+                            <input type="number" class="form-control fw-semibold" id="cashAmount" placeholder="Amount" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label fw-semibold">First Name</label>
+                        <input type="text" class="form-control" id="fName" required>
+                    </div>
+                    <div class="col">
+                        <label class="form-label fw-semibold">Last Name</label>
+                        <input type="text" class="form-control" id="lName" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label fw-semibold">City</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <div class="col">
+                        <label class="form-label fw-semibold">State</label>
+                        <select class="form-select" aria-label="Select a state" id="state" required>
+                            <option value="" selected disabled hidden>Pick a state</option>
+                            <option>Amazonas</option><option>Anzóategui</option><option>Apure</option><option>Aragua</option>
+                            <option>Barinas</option><option>Bólivar</option>
+                            <option>Carabobo</option><option>Cojedes</option>
+                            <option>Delta Amacuro</option><option>Dependencias Federales</option><option>Distrito Capital</option>
+                            <option>Falcón</option>
+                            <option>Guárico</option>
+                            <option>Lara</option>
+                            <option>Mérida</option><option>Miranda</option><option>Monagas</option>
+                            <option>Nueva Esparta</option>
+                            <option>Portuguesa</option>
+                            <option>Sucre</option>
+                            <option>Táchira</option><option>Trujillo</option>
+                            <option>Vargas</option>
+                            <option>Yaracuy</option>
+                            <option>Zulia</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label class="form-label fw-semibold">Postal Code</label>
+                        <input type="number" class="form-control" id="postalCode" required>
+                    </div>
+                </div>
+
+                <div class="row pb-3">
+                    <div class="col">
+                        <p class="form-label fw-semibold">We accept:</p>
+                        <div class="d-inline-block bg-secondary p-2 rounded text-light ">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="paymentMethods" id="mastercard" value="mastercard" checked>
+                                <label class="form-check-label" for="mastercard"><span class="fa-brands fa-cc-mastercard"></span></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="paymentMethods" id="visa" value="visa">
+                                <label class="form-check-label" for="visa"><span class="fa-brands fa-cc-visa"></span></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="paymentMethods" id="dinersClub" value="diners club">
+                                <label class="form-check-label" for="dinersClub"><span class="fa-brands fa-cc-diners-club"></span></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="paymentMethods" id="dinersClub" value="american express">
+                                <label class="form-check-label" for="dinersClub"><span class="fa-brands fa-cc-amex"></span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="message" class="form-label fw-semibold">Message</label>
+                        <textarea name="message" id="message" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-footer text-end">
+                <button class="btn btn-secondary col-1">Cancel</button>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+</body>
+<!-- bootstrap is a treat yo, not having to create a css file everytime i need to do some crazy stuff is always great-->
+<!-- ask teach for help in regards to missing files on 4g-->
+<!-- -->
+</html>
